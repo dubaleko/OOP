@@ -1,0 +1,7 @@
+D:\Labs\Лабы ООП\Lab2\Lab2\bin\Debug\Lab2.exe.config
+D:\Labs\Лабы ООП\Lab2\Lab2\bin\Debug\Lab2.exe
+D:\Labs\Лабы ООП\Lab2\Lab2\bin\Debug\Lab2.pdb
+D:\Labs\Лабы ООП\Lab2\Lab2\obj\Debug\Lab2.csprojAssemblyReference.cache
+D:\Labs\Лабы ООП\Lab2\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+D:\Labs\Лабы ООП\Lab2\Lab2\obj\Debug\Lab2.exe
+D:\Labs\Лабы ООП\Lab2\Lab2\obj\Debug\Lab2.pdb
