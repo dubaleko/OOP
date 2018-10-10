@@ -1,0 +1,14 @@
+D:\Labs\Лабы ООП\lab 4\lab 4\bin\Debug\lab 4.exe.config
+D:\Labs\Лабы ООП\lab 4\lab 4\bin\Debug\lab 4.exe
+D:\Labs\Лабы ООП\lab 4\lab 4\bin\Debug\lab 4.pdb
+D:\Labs\Лабы ООП\lab 4\lab 4\obj\Debug\lab 4.csprojAssemblyReference.cache
+D:\Labs\Лабы ООП\lab 4\lab 4\obj\Debug\lab 4.csproj.CoreCompileInputs.cache
+D:\Labs\Лабы ООП\lab 4\lab 4\obj\Debug\lab 4.exe
+D:\Labs\Лабы ООП\lab 4\lab 4\obj\Debug\lab 4.pdb
+D:\Labs\Лабы ООП\labs 4\lab 4\obj\Debug\lab 4.csprojAssemblyReference.cache
+D:\Labs\Лабы ООП\labs 4\lab 4\obj\Debug\lab 4.csproj.CoreCompileInputs.cache
+D:\Labs\Лабы ООП\labs 4\lab 4\obj\Debug\lab 4.exe
+D:\Labs\Лабы ООП\labs 4\lab 4\obj\Debug\lab 4.pdb
+D:\Labs\Лабы ООП\labs 4\lab 4\bin\Debug\lab 4.exe.config
+D:\Labs\Лабы ООП\labs 4\lab 4\bin\Debug\lab 4.exe
+D:\Labs\Лабы ООП\labs 4\lab 4\bin\Debug\lab 4.pdb
