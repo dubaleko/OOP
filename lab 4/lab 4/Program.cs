@@ -212,29 +212,6 @@ namespace lab_4
                 }
                 return kolvo;
             }
-            public static string dobavlenietocki(string str)
-            {
-                string str2 = str.Insert(str.Length, ".");
-                return str2;
-            }
-            public static void proverkananull(int[] a)
-            {
-                int[] c = new int[0];
-                int k = 0;
-                List<int> z = new List<int> { };
-                for (int i = 0; i < a.Length; i++)
-                {
-                    if (a[i] != 0)
-                    {
-                        z.Add(a[i]);
-                        k++;
-                    }
-                }
-                for (int i = 0; i<k;i++)
-                {
-                    Console.WriteLine(z[i]);
-                }
-            }
         }
         static void Main()
         {
@@ -303,10 +280,9 @@ namespace lab_4
             Console.WriteLine("Число элементов множества:" + Mathoperation.findkovlo(d));
             Console.WriteLine("Введите строку в конец которой хотите добавить точку");
             string str = Console.ReadLine();
-            Console.WriteLine(Mathoperation.dobavlenietocki(str));
+            str.dobavlenietocki();          
             Console.WriteLine("Все нули из множества  удалены ");
-            Mathoperation.proverkananull(d);
+            d.proverkananull();
         }
         }    
 }
-
