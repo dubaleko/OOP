@@ -13,7 +13,7 @@ namespace lab5
         public string typeofrazmer { get; set; }
         public virtual void GetInfoAboutPlant()
         {
-            Console.WriteLine($"Type of Paper :{typeofpaper} TypeofPosy :{typeofposy} TypeofRazmer :{typeofrazmer}");
+            Console.WriteLine($"Type of Paper :{typeofpaper} Type of Posy :{typeofposy} Type of Razmer :{typeofrazmer}");
         }
         protected Plant(string typeofpaper , string typeofposy , string typeofrazmer)
         {

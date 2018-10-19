@@ -10,7 +10,6 @@ namespace lab5
     {
         public Flower(string typeofpaper, string typeofposy, string typeofrazmer, string typeoflist) : base(typeofpaper, typeofposy, typeofrazmer)
         {
-            Console.WriteLine("V poiske priklucheniy");
         }
         public override string ToString()
         {

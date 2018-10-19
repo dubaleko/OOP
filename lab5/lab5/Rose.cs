@@ -10,7 +10,7 @@ namespace lab5
     {
         public Rose(string typeofpaper, string typeofposy, string typeofrazmer, string typeoflist) : base(typeofpaper, typeofposy, typeofrazmer, typeoflist)
         {
-            Console.WriteLine("V poiske priklucheniy");
+
         }
         public override string ToString()
         {

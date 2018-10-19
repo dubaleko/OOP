@@ -10,7 +10,6 @@ namespace lab5
     {
         public Bush(string typeofpaper,string typeofposy, string typeofrazmer) : base(typeofpaper, typeofposy, typeofrazmer)
         {
-            Console.WriteLine("V poiske priklucheniy");
         }
         public override string ToString()
         {
