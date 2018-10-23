@@ -6,14 +6,33 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
+    struct SomebodyStruct
+    {
+        public string Latinname;
+        public int Coast;
+
+        public void DisplayNameAndCoast() => Console.WriteLine($"Latinname: {Latinname} coast: {Coast} by rub");
+
+        public SomebodyStruct(string Latinname, int Coast)
+        {
+            this.Latinname = Latinname;
+            this.Coast = Coast;
+        }
+    }
+    enum MyEnum
+    {
+        Hello = 1 , My , Name , Valentin,
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            Plant bush = new Bush("Неописуемая бумага","Никаких букетов из кустов", "Большой размер ");
-            Plant kaktus = new Kaktus("Новая бумага", "Красивый букет", "Небольшой размер", "Благородные листья");
-            Plant rose = new Rose("Cвежая бумага", "Букет для дамы", "Размер не выжен", "Божественные листья");
-            Plant gladiolus = new Gladiolus("Нельзя пускать такой цветок на бумагу", "Букет для твоего бро", "Какой-то там размер", "Невообразимые листья");
+            Console.WriteLine("========================================================================================================================");
+            Console.WriteLine("Labs 5:");
+            Plant bush = new Bush("Bush", "10-15 years", "Normal size");
+            Plant kaktus = new Kaktus("Cactus", " 5-6 years", "Average" , 15);
+            Plant rose = new Rose("Rosa", "10-15 days", "No't bad size", 20);
+            Plant gladiolus = new Gladiolus("Gladiolus", "8-12 days", "Pefect size",30);
             Console.WriteLine("Information about bush");
             bush.GetInfoAboutPlant();
             Console.WriteLine("Information about kaktus");
@@ -23,28 +42,40 @@ namespace lab5
             Console.WriteLine("Information about gladiolus");
             gladiolus.GetInfoAboutPlant();
             Console.WriteLine("Metods with one name :");
-            Posy roza = new Rose("бумага как бумага", "цветной букет", "Смешной размер", "Листики");
+            Latinname roza = rose;
             roza.Metod();
-            Paper glad = new Gladiolus("beautifil paper", "amazing posy", "big gabarits", "Nice List");
-            Console.WriteLine(glad.Metod());
-            if (glad is Posy)
-                Console.WriteLine("it's a Posy type");
+            Year glad = gladiolus;
+            glad.Metod();
+            if (glad is Year)
+                Console.WriteLine("it's a Year type");
             else
-                Console.WriteLine("Oh no i'ts are not Posy type");
-            if (glad is Paper)
-                Console.WriteLine("it's a Paper type");
+                Console.WriteLine("Oh no i'ts are not Year type");
+            if (glad is Latinname)
+                Console.WriteLine("it's a Latinname type");
             else
-                Console.WriteLine("Sorry i'ts are not Paper type");             
+                Console.WriteLine("Sorry i'ts are not Latinname type");             
             Object someObj = gladiolus;
             glad = someObj as Gladiolus;
             if (glad != null)
                 Console.WriteLine("Wow it's good");
             else
-                Console.WriteLine("O no i'ts a very bad");
+            Console.WriteLine("O no i'ts a very bad");
+            Console.WriteLine("Array of plants");
             object[] ListOfObjescts = new object[] { bush, kaktus, rose, gladiolus };
-            foreach (Paper cap in ListOfObjescts)
-                Printer.iAmPrinting(cap);
-
+            foreach (Latinname cap in ListOfObjescts)
+            Printer.iAmPrinting(cap);
+            Console.WriteLine("========================================================================================================================");
+            Console.WriteLine("Labs 6:");
+            MyEnum enume = MyEnum.Hello;
+            Console.WriteLine("Implementation of ENUM:");
+            for (int i =0; i < 4; i++)
+            {
+                Console.WriteLine(enume+" ");
+                enume++;
+            }
+            SomebodyStruct odv = new SomebodyStruct("APHACA", 1);
+            Console.WriteLine("Implementation of STRUCT:");
+            odv.DisplayNameAndCoast();
         }
     }
 }

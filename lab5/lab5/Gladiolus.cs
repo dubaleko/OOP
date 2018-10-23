@@ -8,7 +8,7 @@ namespace lab5
 {
     class Gladiolus : Flower
     {
-        public Gladiolus(string typeofpaper, string typeofposy, string typeofrazmer, string typeoflist) : base(typeofpaper, typeofposy, typeofrazmer, typeoflist)
+        public Gladiolus(string latinname, string yearofplant, string typeofrazmer , int coast) : base(latinname, yearofplant, typeofrazmer,coast)
         {
         }
         public override string ToString()

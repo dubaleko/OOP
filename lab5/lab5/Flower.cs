@@ -8,7 +8,7 @@ namespace lab5
 {
     class Flower: Plant
     {
-        public Flower(string typeofpaper, string typeofposy, string typeofrazmer, string typeoflist) : base(typeofpaper, typeofposy, typeofrazmer)
+        public Flower(string latinname, string yearofplant, string typeofrazmer, int coast) : base (latinname, yearofplant, typeofrazmer)
         {
         }
         public override string ToString()

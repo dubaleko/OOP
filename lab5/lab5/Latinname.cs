@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-    class Posy
+    interface Latinname
     {
-        private static Flower[] flowersarray;
-
+        string latinname { get; set; }
+        void Metod();
     }
 }

@@ -8,7 +8,7 @@ namespace lab5
 {
     sealed class Kaktus : Flower
     {
-        public Kaktus(string typeofpaper, string typeofposy, string typeofrazmer, string typeoflist) : base(typeofpaper, typeofposy, typeofrazmer,typeoflist)
+        public Kaktus(string latinname, string yearofplant, string typeofrazmer , int coast) : base(latinname, yearofplant, typeofrazmer,coast)
         {
 
         }

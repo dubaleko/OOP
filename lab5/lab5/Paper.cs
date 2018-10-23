@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-    interface Paper
+    class Paper : Plant
     {
-        string typeofpaper { get; set; }
-        bool  Metod();
+        public Paper(string latinname, string yearofplant, string typeofrazmer) : base(latinname, yearofplant, typeofrazmer)
+        {
+
+        }
+        public override string ToString()
+        {
+            return "Paper";
+        }
     }
 }

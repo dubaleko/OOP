@@ -6,41 +6,28 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-   abstract class Plant : Object , Paper , Posy 
+   abstract partial class Plant : Object , Year , Latinname
     {
-        public string typeofpaper{get;set;}
-        public string typeofposy { get; set;}
+        public string latinname{get;set;}
+        public string yearofplant { get; set;}
         public string typeofrazmer { get; set; }
         public virtual void GetInfoAboutPlant()
         {
-            Console.WriteLine($"Type of Paper :{typeofpaper} Type of Posy :{typeofposy} Type of Razmer :{typeofrazmer}");
+            Console.WriteLine($"Latin name :{latinname} Type of Posy :{yearofplant} Type of Razmer :{typeofrazmer}");
         }
-        protected Plant(string typeofpaper , string typeofposy , string typeofrazmer)
+        protected Plant(string latinname , string yearofplant , string typeofrazmer)
         {
-            this.typeofpaper = typeofpaper;
-            this.typeofposy = typeofposy;
+            this.latinname = latinname;
+            this.yearofplant = yearofplant;
             this.typeofrazmer = typeofrazmer;
         }
-        bool Paper.Metod()
+        void Year.Metod()
         {
-            bool c = true;
-            return c;
+            Console.WriteLine("One implementation of one name Metod");
         }
-        void  Posy.Metod()
+         void Latinname.Metod()
         {
-            Console.WriteLine("Совсем другая реализация навязанного задания ");
-        }
-        public override int GetHashCode()
-        {
-            return 18;
-        }
-        public override string ToString()
-        {
-            return "Plant";
-        }
-        public override bool Equals(object obj)
-        {
-            return !base.Equals(obj);
+            Console.WriteLine("Second implementation of one name Metod");
         }
     }
 }

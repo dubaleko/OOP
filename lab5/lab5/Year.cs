@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-    class Posy
+    interface Year
     {
-        private static Flower[] flowersarray;
-
+        string yearofplant { get; set; }
+        void Metod();
     }
 }

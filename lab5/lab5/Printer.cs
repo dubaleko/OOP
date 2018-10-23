@@ -8,7 +8,7 @@ namespace lab5
 {
     class Printer
     {
-        public static void iAmPrinting(Paper pup)
+        public static void iAmPrinting(Latinname pup)
         {
             Console.WriteLine(pup.ToString());
          }
