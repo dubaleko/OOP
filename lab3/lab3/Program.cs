@@ -123,7 +123,7 @@ namespace lab3
         //Конструкторы
         private Date()
         {
-            Console.WriteLine("Какой-то текст который запихнут в конструктор не обращайте внимание");
+            Console.WriteLine("Какой-то текст который запихнут в конструктор не обращайте свое внимание");
         }
         static Date() { }
         public Date(int day, int month, int year)
