@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-   abstract partial class Plant : Object , Year , Latinname
+   abstract partial class Plant : Object , Color , Latinname
     {
         public string latinname{get;set;}
-        public string yearofplant { get; set;}
+        public string colorofplant { get; set;}
         public string typeofrazmer { get; set; }
         public virtual void GetInfoAboutPlant()
         {
-            Console.WriteLine($"Latin name :{latinname} Type of Posy :{yearofplant} Type of Razmer :{typeofrazmer}");
+            Console.WriteLine($"Latin name :{latinname} Type of Posy :{colorofplant} Type of Razmer :{typeofrazmer}");
         }
-        protected Plant(string latinname , string yearofplant , string typeofrazmer)
+        protected Plant(string latinname , string colorofplant , string typeofrazmer)
         {
             this.latinname = latinname;
-            this.yearofplant = yearofplant;
+            this.colorofplant = colorofplant;
             this.typeofrazmer = typeofrazmer;
         }
-        void Year.Metod()
+        void Color.Metod()
         {
             Console.WriteLine("One implementation of one name Metod");
         }

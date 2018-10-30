@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-    interface Year
+    interface Color
     {
-        string yearofplant { get; set; }
+        string colorofplant { get; set; }
         void Metod();
     }
 }

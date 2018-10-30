@@ -29,10 +29,10 @@ namespace lab5
         {
             Console.WriteLine("========================================================================================================================");
             Console.WriteLine("Labs 5:");
-            Plant bush = new Bush("Bush", "10-15 years", "Normal size");
-            Plant kaktus = new Kaktus("Cactus", " 5-6 years", "Average" , 15);
-            Plant rose = new Rose("Rosa", "10-15 days", "No't bad size", 20);
-            Plant gladiolus = new Gladiolus("Gladiolus", "8-12 days", "Pefect size",30);
+            Plant bush = new Bush("Bush", "green", "Normal size");
+            Plant kaktus = new Kaktus("Cactus", "yellow", "Average" , 15);
+            Plant rose = new Rose("Rosa", "red", "No't bad size", 20);
+            Plant gladiolus = new Gladiolus("Gladiolus", "blue", "Pefect size",30);
             Console.WriteLine("Information about bush");
             bush.GetInfoAboutPlant();
             Console.WriteLine("Information about kaktus");
@@ -44,9 +44,9 @@ namespace lab5
             Console.WriteLine("Metods with one name :");
             Latinname roza = rose;
             roza.Metod();
-            Year glad = gladiolus;
+            Color glad = gladiolus;
             glad.Metod();
-            if (glad is Year)
+            if (glad is Color)
                 Console.WriteLine("it's a Year type");
             else
                 Console.WriteLine("Oh no i'ts are not Year type");
@@ -76,6 +76,13 @@ namespace lab5
             SomebodyStruct odv = new SomebodyStruct("APHACA", 1);
             Console.WriteLine("Implementation of STRUCT:");
             odv.DisplayNameAndCoast();
+            Posy posy = new Posy();
+            posy[0] = rose;
+            posy[1] = gladiolus;
+            posy[2] = kaktus;
+            Console.WriteLine("Posy Consist:");
+            posy.OutputPosy();
+
         }
     }
 }

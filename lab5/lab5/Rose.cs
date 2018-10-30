@@ -8,7 +8,7 @@ namespace lab5
 {
     class Rose : Flower
     {
-        public Rose(string latinname, string yearofplant, string typeofrazmer , int coast) : base(latinname, yearofplant, typeofrazmer,coast)
+        public Rose(string latinname, string colorofplant, string typeofrazmer , int coast) : base(latinname, colorofplant, typeofrazmer,coast)
         {
 
         }

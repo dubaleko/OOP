@@ -44,19 +44,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bush.cs" />
+    <Compile Include="ClassController.cs" />
     <Compile Include="Flower.cs" />
     <Compile Include="Gladiolus.cs" />
     <Compile Include="Kaktus.cs" />
     <Compile Include="Latinname.cs" />
     <Compile Include="Paper.cs" />
     <Compile Include="Plant.cs" />
-    <Compile Include="Plant1.cs" />
     <Compile Include="Posy.cs" />
     <Compile Include="Printer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rose.cs" />
-    <Compile Include="Year.cs" />
+    <Compile Include="Color.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
