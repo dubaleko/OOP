@@ -80,12 +80,16 @@ namespace lab5
             posy[0] = rose;
             posy[1] = gladiolus;
             posy[2] = kaktus;
+            Console.WriteLine("Posy consist:");
             posy.OutputPosy();
             posy.Delete(2);
+            Console.WriteLine("Posy consist without 1 flower:");
             posy.OutputPosy();
             posy.Coast(posy);
+            Console.WriteLine("Sorting of posy by price:");
             posy.Sortirovka(posy);
-            
+            posy.ColorofFlower(posy);
+            Console.WriteLine("========================================================================================================================");
         }
     }
 }

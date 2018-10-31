@@ -21,7 +21,6 @@ namespace lab5
         }
        public void OutputPosy()
        {
-            Console.WriteLine("Posy Consist:");
             for (int i=0; i<Buket.Length;i++)
             {
                 Console.WriteLine(Buket[i]);

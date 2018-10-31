@@ -18,9 +18,9 @@ namespace lab5
             }
           Console.WriteLine($"Coast of all plant in posy {k} by rub");
         }
-        public void Sortirovka(Posy posy)
+      public void Sortirovka(Posy posy)
         {
-            Plant min;
+            Plant number;
             Plant[] Buket = posy.GetPosy();
             for (int i = 0; i < Buket.Length-1; i++)
             {
@@ -28,13 +28,26 @@ namespace lab5
                 {
                     if (Buket[i].coast > Buket[j].coast)
                     {
-                        min = Buket[i];
+                        number = Buket[i];
                         Buket[i] = Buket[j];
-                        Buket[j] = min;
+                        Buket[j] = number;
                     }
                 }
             }
             posy.OutputPosy();
+        }
+      public void ColorofFlower(Posy posy)
+        {
+            Plant[] Buket = posy.GetPosy();
+            string  k =  "red";
+            Console.WriteLine("Red color Flower:");
+            for (int i = 0; i < Buket.Length; i++)
+            {
+               if (String.Compare(k,Buket[i].colorofplant) == 0)
+               {
+                    Console.WriteLine(Buket[i]);
+               }
+            }
         }
     }
 }
