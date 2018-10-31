@@ -8,10 +8,28 @@ namespace lab5
 {
    abstract partial class Plant : Object , Color , Latinname
     {
+        public int coast;
         public string latinname{get;set;}
         public string colorofplant { get; set;}
         public string typeofrazmer { get; set; }
-        public int coast { get; set; }
+        public int Coast
+        {
+            get
+            {
+                return coast;
+            }
+            set
+            {
+                if(coast >= 500)
+                {
+                    throw new DateError("Ну не могут столько стоить цветы");
+                }
+                else
+                {
+                    coast = value;
+                }
+            }
+        }
         public virtual void GetInfoAboutPlant()
         {
             Console.WriteLine($"Latin name :{latinname} Type of Posy :{colorofplant} Type of Razmer :{typeofrazmer} Coast:{coast} by rub");

@@ -28,7 +28,7 @@ namespace lab5
         static void Main(string[] args)
         {
             Console.WriteLine("========================================================================================================================");
-            Console.WriteLine("Labs 5:");
+            Console.WriteLine("Laboratornya 5:");
             Plant bush = new Bush("Bush", "green", "Normal size",10);
             Plant kaktus = new Kaktus("Cactus", "yellow", "Average" , 15);
             Plant rose = new Rose("Rosa", "red", "No't bad size", 50);
@@ -65,7 +65,7 @@ namespace lab5
             foreach (Latinname cap in ListOfObjescts)
             Printer.iAmPrinting(cap);
             Console.WriteLine("========================================================================================================================");
-            Console.WriteLine("Labs 6:");
+            Console.WriteLine("Laboratornya 6:");
             MyEnum enume = MyEnum.Hello;
             Console.WriteLine("Implementation of ENUM:");
             for (int i =0; i < 4; i++)
@@ -90,6 +90,19 @@ namespace lab5
             posy.Sortirovka(posy);
             posy.ColorofFlower(posy);
             Console.WriteLine("========================================================================================================================");
+            Console.WriteLine("Laboratornya 7:");
+            try
+            {
+                Plant kust = new Bush("Bush", "orange", "Normal size", 600);
+            }
+            catch(DateError ex)
+            {
+                Console.WriteLine($"Ошибка {ex.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Hello it's me Mario");
+            }
         }
     }
 }

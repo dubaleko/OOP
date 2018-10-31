@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Bush.cs" />
     <Compile Include="ClassController.cs" />
+    <Compile Include="DateError.cs" />
     <Compile Include="Flower.cs" />
     <Compile Include="Gladiolus.cs" />
     <Compile Include="Kaktus.cs" />
