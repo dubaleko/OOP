@@ -8,7 +8,7 @@ namespace lab5
 {
     class Paper : Plant
     {
-        public Paper(string latinname, string yearofplant, string typeofrazmer) : base(latinname, yearofplant, typeofrazmer)
+        public Paper(string latinname, string yearofplant, string typeofrazmer, int coast) : base(latinname, yearofplant, typeofrazmer,coast)
         {
 
         }

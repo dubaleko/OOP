@@ -29,9 +29,9 @@ namespace lab5
         {
             Console.WriteLine("========================================================================================================================");
             Console.WriteLine("Labs 5:");
-            Plant bush = new Bush("Bush", "green", "Normal size");
+            Plant bush = new Bush("Bush", "green", "Normal size",10);
             Plant kaktus = new Kaktus("Cactus", "yellow", "Average" , 15);
-            Plant rose = new Rose("Rosa", "red", "No't bad size", 20);
+            Plant rose = new Rose("Rosa", "red", "No't bad size", 50);
             Plant gladiolus = new Gladiolus("Gladiolus", "blue", "Pefect size",30);
             Console.WriteLine("Information about bush");
             bush.GetInfoAboutPlant();
@@ -80,9 +80,12 @@ namespace lab5
             posy[0] = rose;
             posy[1] = gladiolus;
             posy[2] = kaktus;
-            Console.WriteLine("Posy Consist:");
             posy.OutputPosy();
-
+            posy.Delete(2);
+            posy.OutputPosy();
+            posy.Coast(posy);
+            posy.Sortirovka(posy);
+            
         }
     }
 }

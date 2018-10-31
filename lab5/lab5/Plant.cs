@@ -11,15 +11,17 @@ namespace lab5
         public string latinname{get;set;}
         public string colorofplant { get; set;}
         public string typeofrazmer { get; set; }
+        public int coast { get; set; }
         public virtual void GetInfoAboutPlant()
         {
-            Console.WriteLine($"Latin name :{latinname} Type of Posy :{colorofplant} Type of Razmer :{typeofrazmer}");
+            Console.WriteLine($"Latin name :{latinname} Type of Posy :{colorofplant} Type of Razmer :{typeofrazmer} Coast:{coast} by rub");
         }
-        protected Plant(string latinname , string colorofplant , string typeofrazmer)
+        protected Plant(string latinname , string colorofplant , string typeofrazmer , int coast)
         {
             this.latinname = latinname;
             this.colorofplant = colorofplant;
             this.typeofrazmer = typeofrazmer;
+            this.coast = coast;
         }
         void Color.Metod()
         {
