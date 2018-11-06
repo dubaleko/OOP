@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading.Tasks;
 
 namespace lab5
 {
@@ -10,12 +10,12 @@ namespace lab5
     {
       public void Coast(Posy posy)
         {
-            Plant[] Buket = posy.GetPosy();
-            int k = 0;
-            for (int i = 0; i < Buket.Length; i++)
-            {
+           Plant[] Buket = posy.GetPosy();
+           int k = 0;
+           for (int i = 0; i < Buket.Length; i++)
+           {
                 k = k + posy[i].coast;
-            }
+           }
           Console.WriteLine($"Coast of all plant in posy {k} by rub");
         }
       public void Sortirovka(Posy posy)
@@ -43,7 +43,7 @@ namespace lab5
             Console.WriteLine("Red color Flower:");
             for (int i = 0; i < Buket.Length; i++)
             {
-               if (String.Compare(k,Buket[i].colorofplant) == 0)
+                if (String.Compare(k,Buket[i].colorofplant) == 0)
                {
                     Console.WriteLine(Buket[i]);
                }

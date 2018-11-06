@@ -2,34 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading.Tasks;using System.Diagnostics;
 
 namespace lab5
 {
    abstract partial class Plant : Object , Color , Latinname
     {
-        public int coast;
         public string latinname{get;set;}
         public string colorofplant { get; set;}
         public string typeofrazmer { get; set; }
-        public int Coast
-        {
-            get
-            {
-                return coast;
-            }
-            set
-            {
-                if(coast >= 500)
-                {
-                    throw new DateError("Ну не могут столько стоить цветы");
-                }
-                else
-                {
-                    coast = value;
-                }
-            }
-        }
+        public int coast{ get; set; }
         public virtual void GetInfoAboutPlant()
         {
             Console.WriteLine($"Latin name :{latinname} Type of Posy :{colorofplant} Type of Razmer :{typeofrazmer} Coast:{coast} by rub");
@@ -48,6 +30,10 @@ namespace lab5
          void Latinname.Metod()
         {
             Console.WriteLine("Second implementation of one name Metod");
+        }
+        public void DebugMetod(Plant name)
+        {
+            Debug.Assert(name.coast < 600, "Are very big coast of plant");
         }
     }
 }

@@ -45,7 +45,10 @@
   <ItemGroup>
     <Compile Include="Bush.cs" />
     <Compile Include="ClassController.cs" />
-    <Compile Include="DateError.cs" />
+    <Compile Include="ColorException.cs" />
+    <Compile Include="SizeException.cs" />
+    <Compile Include="TypeException.cs" />
+    <Compile Include="СoastException.cs" />
     <Compile Include="Flower.cs" />
     <Compile Include="Gladiolus.cs" />
     <Compile Include="Kaktus.cs" />
