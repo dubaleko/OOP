@@ -10,7 +10,18 @@ namespace laba_8
     {
         static void Main(string[] args)
         {
+         try
+            {
 
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+
+            }
         }
     }
 }
