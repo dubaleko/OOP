@@ -31,7 +31,7 @@ namespace lab5
         static void Main(string[] args)
         {
             Console.WriteLine(s);
-            Console.WriteLine("Laboratornya 5:");
+            Console.WriteLine("Laboratornya 5: ");
             Console.WriteLine(str);
             Plant bush = new Bush("Bush", "green", "Normal size",10);
             Plant kaktus = new Kaktus("Cactus", "yellow", "Average" , 15);
