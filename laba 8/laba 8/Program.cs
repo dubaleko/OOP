@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace laba_8
 {
-    class Program
-    {
-        static void Main(string[] args)
+  class Program
+  {
+     static void Main(string[] args)
+     {
+        try
         {
-         try
-            {
-
-            }
-            catch
-            {
-
-            }
-            finally
-            {
-
-            }
+        
         }
-    }
+        catch
+        {
+
+        }
+        finally
+        {
+
+        }
+     }
+  }
 }
