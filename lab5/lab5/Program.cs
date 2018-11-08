@@ -174,8 +174,6 @@ namespace lab5
                 Console.WriteLine("Enter y:");
                 int y = int.Parse(Console.ReadLine());
                 int c = x / y;
-                if (y == 0) throw new Exception();
-                else Console.WriteLine($"x/y = {c}");
             }
             catch(Exception ex)
             {
@@ -189,7 +187,6 @@ namespace lab5
              Random rand = new Random();
              for (int i= 0; i< 6; i++)
              {
-               if (i > 5) throw new Exception();
                arr[i] = rand.Next(0, 10);
              }
             }
