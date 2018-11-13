@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CollectionType.cs" />
     <Compile Include="Interface.cs" />
+    <Compile Include="Plant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
