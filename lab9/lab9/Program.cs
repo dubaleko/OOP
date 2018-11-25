@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace lab9
 {
-    class Program 
+    class Program : Direktor
     {
         delegate void Raise(Teacher tch);
         delegate void Fine(Teacher tch);
         static void Main(string[] args)
-        {
+        { 
             string mystr = new string('_', 120);
             Direktor direktor = new Direktor();
             Teacher teacher1 = new Teacher("Татьяна", 500);
             Teacher teacher2 = new Teacher("Евгений", 500);
+            Raisesalary hd = teacher1.Raise;
+            hd();
             direktor.Getfine += teacher1.Fine;
             direktor.Getsalary += teacher1.Raise;
             direktor.Getsalary += teacher2.Raise;

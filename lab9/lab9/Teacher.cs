@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab9
 {
-    class Teacher
+    class Teacher:Direktor
     {
         public string namе { get; set; }
         public int salary { get; set; }

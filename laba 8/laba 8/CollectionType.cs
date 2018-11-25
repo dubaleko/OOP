@@ -7,7 +7,7 @@ using System.IO;
 
 namespace laba_8
 {
-   class CollectionType<T> : Interface<T>
+   class CollectionType<T> : Interface<T>  where T : Plant
    {
     
      private List<T> collection = new List<T>();
