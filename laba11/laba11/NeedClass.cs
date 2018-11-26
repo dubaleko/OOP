@@ -28,4 +28,17 @@ namespace laba11
             this.Id = Id;
         }
     }
+    class Phone
+    {
+        public string name { get; set; }
+        public string company { get; set; }
+        public int yearofpublic { get; set; }
+
+        public Phone(string name, string company, int yearofpublic)
+        {
+            this.name = name;
+            this.company = company;
+            this.yearofpublic = yearofpublic;
+        }
+    }
 }

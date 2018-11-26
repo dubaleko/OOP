@@ -67,7 +67,7 @@ namespace laba11
             data.AddRange(datearray);
 
             //Data from need year
-            Console.WriteLine("Pls input need year");
+            Console.Write("Pls input need year: ");
             int needyear = int.Parse(Console.ReadLine());
             var datayear = from date in data where date.year == needyear select date;
             Console.WriteLine("List data in this year:");
@@ -78,7 +78,7 @@ namespace laba11
             Console.WriteLine();
 
             //Data from need month
-            Console.WriteLine("Pls input need month");
+            Console.Write("Pls input need month[1-12]: ");
             int needmonth = int.Parse(Console.ReadLine());
             var datemonth = from date in data where date.month == needmonth select date;
             Console.WriteLine("List data in this month:");
@@ -91,16 +91,16 @@ namespace laba11
             //Data from need range
             Console.WriteLine("Pls input range in format two date [day.month.year]");
             Console.WriteLine("First date:");
-            Console.Write("day: ");
+            Console.Write("day[1-31]: ");
             int firstday = int.Parse(Console.ReadLine());
-            Console.Write("month: ");
+            Console.Write("month[1-12]: ");
             int firstmonth = int.Parse(Console.ReadLine());
             Console.Write("year: ");
             int firstyear = int.Parse(Console.ReadLine());
             Console.WriteLine("Second date:");
-            Console.Write("day: ");
+            Console.Write("day[1-31]: ");
             int secondday = int.Parse(Console.ReadLine());
-            Console.Write("month: ");
+            Console.Write("month[1-12]: ");
             int secondmonth = int.Parse(Console.ReadLine());
             Console.Write("year: ");
             int secondyear = int.Parse(Console.ReadLine());
@@ -108,6 +108,7 @@ namespace laba11
             (date.year > firstyear || date.year == firstyear && date.month > firstmonth || date.year == firstyear && date.month == firstmonth && date.day > firstday) &&
             (date.year < secondyear || date.year == secondyear && date.month < secondmonth || date.year == secondyear && date.month == secondmonth && date.day < secondday)
             select date;
+            Console.WriteLine();
             Console.WriteLine("Data of range:");
             foreach (Date date in range)
             {
@@ -116,7 +117,7 @@ namespace laba11
             Console.WriteLine();
 
             //First data for day
-            Console.WriteLine("Pls input need day");
+            Console.Write("Pls input need day [1-31]: ");
             int needday = int.Parse(Console.ReadLine());
             var thisday = from date in data where date.day == needday select date;
             Console.Write("Need date: ");
@@ -153,14 +154,35 @@ namespace laba11
                       select new { Depart = dep.depname, Employees = mygroup };
             foreach(var dep in emp)
             {
-                Console.Write("department :"+dep.Depart);
+                Console.Write("Department :"+dep.Depart);
                 foreach(var em in dep.Employees)
                 {
-                    Console.WriteLine(" name of employee :"+em.name);
+                    Console.WriteLine(" Name of employee :"+em.name);
                 }
             }
             Console.WriteLine(mystr);
 
+            //My request
+            Console.WriteLine("My request");
+            List<Phone> phones = new List<Phone>{ new Phone ("Lumia 430", "Microsoft",2015 ), new Phone ("Mi 5","Xiaomi",2016),
+                                                  new Phone ("LG G3", "LG",2014),            new Phone ("iPhone 5", "Apple",2013),
+                                                  new Phone ("Lumia 930","Microsoft",2014 ),  new Phone ("iPhone 6S","Apple",2015),
+                                                  new Phone ("Lumia 630","Microsoft",2014),   new Phone ("LG G4", "LG",2015) };
+            Console.Write("Pls input need year: ");
+            int ndyear = int.Parse(Console.ReadLine());
+            var phoneGroups = from phone in phones where phone.yearofpublic >= ndyear
+                              orderby phone.company
+                              group phone by phone.company;
+            Console.WriteLine();
+            Console.WriteLine("List of company:");
+            foreach (IGrouping<string, Phone> g in phoneGroups)
+            {
+                Console.WriteLine(g.Key);
+                foreach (var t in g)
+                    Console.WriteLine(t.name);
+                Console.WriteLine();
+            }
+            Console.WriteLine(mystr);
         }
     }
 }
