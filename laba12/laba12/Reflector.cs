@@ -27,7 +27,7 @@ namespace Lab12
         {
             Type type = Type.GetType(className);
 
-            foreach (var item in type.GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
+            foreach (var item in type.GetMethods(BindingFlags.Instance | BindingFlags.Public ))
             {
                 Console.WriteLine(item);
             }
@@ -70,10 +70,23 @@ namespace Lab12
                 {
                     if (par.ToString() == param)
                     {
-                        Console.WriteLine(par);
+                        Console.WriteLine(item.Name);
                     }
                 }
             }
+        }
+        public static void InvokeMetod(string className , string metodName)
+        {
+            string path = @"D:\Labs\OOP\laba12\laba12\file.txt";
+            string parm;
+            using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
+            {
+                parm = sr.ReadLine();
+            }
+            Type type = Type.GetType(className);
+            var metod = type.GetMethod(metodName);
+            object obj = Activator.CreateInstance(type);
+            metod.Invoke(obj, new object[] {parm});
         }
     }
 }

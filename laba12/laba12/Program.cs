@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Lab12
 {
@@ -11,7 +12,7 @@ namespace Lab12
         static void Main(string[] args)
         {
             Reflector.WriteClassInfo();
-
+       
             Console.WriteLine("---- MyType:");
             Reflector.ClassPublicMethods("Lab12.MyType");
 
@@ -26,6 +27,9 @@ namespace Lab12
 
             Console.WriteLine("\n---- Methods with specified param:");
             Reflector.MethodsByParametres("Lab12.MyType", "Int32 value");
+
+            Console.WriteLine("\n---- Invoke metod:");
+            Reflector.InvokeMetod("Lab12.MyType", "ReturnText");
         }
     }
 }

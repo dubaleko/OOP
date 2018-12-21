@@ -28,5 +28,11 @@ namespace Lab12
         {
             return this.MemberwiseClone();
         }
+
+        public string ReturnText(string text)
+        {
+            Console.WriteLine(text);
+            return text;
+        }
     }
 }
