@@ -14,7 +14,7 @@ namespace Lab12
         {
             Type type = typeof(MyType);
             StreamWriter file = new StreamWriter("ClassInfo.txt");
-
+          
             foreach (var item in type.GetMembers())
             {
                 file.WriteLine(item.Name);
@@ -85,7 +85,7 @@ namespace Lab12
             }
             Type type = Type.GetType(className);
             var metod = type.GetMethod(metodName);
-            object obj = Activator.CreateInstance(type);
+            object obj = Activator.CreateInstance(type); //создание экземпляра метода
             metod.Invoke(obj, new object[] {parm});
         }
     }

@@ -26,10 +26,10 @@ namespace Lab12
             Reflector.InterfacesInClass();
 
             Console.WriteLine("\n---- Methods with specified param:");
-            Reflector.MethodsByParametres("Lab12.MyType", "Int32 value");
+            Reflector.MethodsByParametres("Lab12.MyType", "System.String text");
 
             Console.WriteLine("\n---- Invoke metod:");
-            Reflector.InvokeMetod("Lab12.MyType", "ReturnText");
+            Reflector.InvokeMetod("Lab12.MyType", "ReturnText"); 
         }
     }
 }
