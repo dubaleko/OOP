@@ -27,9 +27,20 @@ namespace laba13
                 {
                     streamWriter.WriteLine(item.Name);
                 }
+                streamWriter.Close();
+                string text = "";
                 string path = @"D:\Labs\OOP\laba13\laba13\bin\Debug\DVVInspect\dvvdirinfo.txt";
                 string newpath = @"D:\Labs\OOP\laba13\laba13\bin\Debug\DVVInspect\dvv.txt";
+                
+                using (StreamReader ss = new StreamReader(path, Encoding.Default))
+                {
+                    text = ss.ReadToEnd();
+                }
                 File.Copy(path, newpath, true);
+                using (StreamWriter sw = new StreamWriter(newpath, true, Encoding.Default))
+                {
+                    sw.WriteLine(text);
+                }
             }
             catch (Exception ex)
             {
@@ -63,10 +74,11 @@ namespace laba13
             try
             {
                 ZipFile.CreateFromDirectory("DVVInspect\\DVVFiles", @"D:\Labs\OOP\laba13\laba13\bin\Debug\DVVFile.zip");
+                ZipFile.ExtractToDirectory(@"D:\Labs\OOP\laba13\laba13\bin\Debug\DVVFile.zip", @"D:\Labs\OOP\laba13\laba13\bin");
             }
-            catch(IOException e)
+            catch (IOException e)
             {
-                Console.WriteLine(e.Message);   
+                Console.WriteLine(e.Message);
             }
         }
     }
