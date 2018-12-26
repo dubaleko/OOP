@@ -79,14 +79,20 @@ namespace Lab12
         {
             string path = @"D:\Labs\OOP\laba12\laba12\file.txt";
             string parm;
+            List<string> parm1 = new List<string>();
             using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
             {
-                parm = sr.ReadLine();
+              parm = sr.ReadToEnd();
+            }
+            string[] words = parm.Split(new char[] { '\n' });
+            foreach (string s in words)
+            {
+                parm1.Add(s);
             }
             Type type = Type.GetType(className);
             var metod = type.GetMethod(metodName);
             object obj = Activator.CreateInstance(type); //создание экземпляра метода
-            metod.Invoke(obj, new object[] {parm});
+            metod.Invoke(obj, new object[] {parm1[0].ToString(), parm1[1].ToString()});
         }
     }
 }

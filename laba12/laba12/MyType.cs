@@ -29,9 +29,10 @@ namespace Lab12
             return this.MemberwiseClone();
         }
 
-        public string ReturnText(string text)
+        public string ReturnText(string text,  string secondtxt)
         {
             Console.WriteLine(text);
+            Console.WriteLine(secondtxt);
             return text;
         }
     }
