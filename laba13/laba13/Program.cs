@@ -34,9 +34,9 @@ namespace laba13
             DVVFileManager.ZipFolder();
 
             Console.WriteLine("----------------------DVVlogfile-----------------------");
+            DVVLog.Upgrade(@"D:\Labs\OOP\laba13\laba13\bin\Debug\dvvlogfile.txt", DateTime.Now.Hour);
             DVVLog.Count(@"D:\Labs\OOP\laba13\laba13\bin\Debug\dvvlogfile.txt");
             DVVLog.PrintInfo(@"D:\Labs\OOP\laba13\laba13\bin\Debug\dvvlogfile.txt");
-            DVVLog.Upgrade(@"D:\Labs\OOP\laba13\laba13\bin\Debug\dvvlogfile.txt", DateTime.Now.Hour);
         }
     }
 }
